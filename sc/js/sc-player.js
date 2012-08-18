@@ -374,6 +374,8 @@
           position:  $('.sc-position', player)[0]
         };
         updatePlayStatus(player, true);
+
+        _gaq.push(['_trackEvent', 'Music', 'Play', track.title]);
         play(track);
       },
       onPause = function(player) {
